@@ -77,7 +77,8 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #2696e9;
+  /* background: #2696e9; */
+  background: #0c0f11;
 }
 
 .home::before {
@@ -182,12 +183,28 @@ section {
   transition: .3s ease;
 }
 
+.slider-navigation .nav-btn.active {
+  background: #2696e9;
+}
+
 .slider-navigation .nav-btn:not(:last-child) {
   margin-right: 20px;
 }
 
 .slider-navigation .nav-btn:hover {
   transform: scale(1.2);
+}
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
 }
 
 @media (max-width: 900px) {
