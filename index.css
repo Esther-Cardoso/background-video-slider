@@ -98,6 +98,11 @@ section {
   color: #fff;
   width: 70%;
   margin-top: 50px;
+  display: none;
+}
+
+.content.active {
+  display: block;
 }
 
 .content h1 {
